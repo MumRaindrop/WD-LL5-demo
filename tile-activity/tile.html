@@ -7,7 +7,10 @@
 
     <!-- ✅ You’re in the right file! Edit this one! -->
     <!-- This is the Tile by Nehir layout activity -->
-
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <!-- 📌 Add the Bootstrap 5 CDN here when ready -->
     <!-- Example: <link href="..." rel="stylesheet"> -->
     <link rel="stylesheet" href="style.css" />
@@ -32,15 +35,17 @@
 
       <!-- Starting state: just images, no Bootstrap grid yet -->
       <!-- You’ll turn these into responsive tiles during the demo -->
-      <img src="../assets/tile1.jpg" alt="Tile print 1" class="mb-3" />
-      <img src="../assets/tile2.jpg" alt="Tile print 2" class="mb-3" />
-      <img src="../assets/tile3.jpg" alt="Tile print 3" class="mb-3" />
-      <img src="../assets/tile4.jpg" alt="Tile print 4" class="mb-3" />
-
+    <div class="row g-4">
+  <div class="col-md-12 col-lg-6 col-xxl-3 text-center p-3"><img src="../assets/tile1.jpg" alt="Tile print 1" class="img-fluid mb-3 tile-img" /></div>
+  <div class="col-md-12 col-lg-6 col-xxl-3 text-center p-3"><img src="../assets/tile2.jpg" alt="Tile print 2" class="img-fluid mb-3 tile-img" /></div>
+  <div class="col-md-12 col-lg-6 col-xxl-3 text-center p-3"><img src="../assets/tile3.jpg" alt="Tile print 3" class="img-fluid mb-3 tile-img" /></div>
+  <div class="col-md-12 col-lg-6 col-xxl-3 text-center p-3"><img src="../assets/tile4.jpg" alt="Tile print 4" class="img-fluid mb-3 tile-img" /></div>
+      </div>
       <!-- 💡 Later you'll:
          - Wrap these in Bootstrap grid classes
          - Add .img-fluid and .border-tile
          - Use AI to improve layout or spacing
     --></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

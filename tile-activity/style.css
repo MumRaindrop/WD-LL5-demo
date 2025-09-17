@@ -20,9 +20,16 @@ h1 {
 }
 
 /* Limit image dimensions so tiles don’t overflow the layout */
-img {
+.tile-img {
   max-height: 250px;
   max-width: 250px;
+  transition: transform 0.2s ease;
+}
+
+.tile-img:hover,
+.tile-img:focus {
+  transform: scale(1.07);
+  z-index: 1;
 }
 
 /* Optional decorative border for each tile */
